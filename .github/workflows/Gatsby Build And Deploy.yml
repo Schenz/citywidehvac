@@ -1,0 +1,38 @@
+name: Gatsby Build And Deploy
+
+on: [push]
+
+env:
+  AZURE_WEBAPP_PACKAGE_PATH: ${{ github.workspace }}
+  
+jobs:
+  Build-And-Deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+
+      - name: Setup Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14
+
+      - name: Install Gatsby and Build
+        run: |
+          echo "install gatsby cli"
+          npm install -g gatsby-cli
+
+          echo "cd www"
+          cd www
+
+          echo "install required packages"
+          npm install
+
+          echo "build"
+          gatsby build
+
+      - name: Upload Artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: build-results
+          path: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}/www/public
