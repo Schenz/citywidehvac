@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `Landing`,
-    description: `Clean and modern landing page starter template for your next saas project launch.`,
+    title: `City Wide HVAC`,
+    description: `Furnaces, Air Conditioners, Heat Pumps, Air Filters, Humidifiers, Clean & Check, Water Heater and Sump Pumps. 24/7 service, call 513.200.2698`,
     siteUrl: `https://www.gatsby-landing-page-starter.com`,
-    author: `@btahir`,
+    author: `@schenz`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
