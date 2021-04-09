@@ -36,15 +36,11 @@ jobs:
           echo "build"
           gatsby build
 
+          echo "az storage blob upload-batch -s ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}/www/public -d \$web --account-name citywidehvac"
+          az storage blob upload-batch -s ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}/www/public -d \$web --account-name citywidehvac
+
       - name: Upload Artifacts
         uses: actions/upload-artifact@v2
         with:
           name: build-results
           path: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}/www/public
-
-      - name: Publish app
-        uses: Azure/cli@v1.0.0
-        with:
-          azcliversion: latest
-          inlineScript: |
-            az storage blob upload-batch -s ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}/www/public -d \$web --account-name citywidehvac
