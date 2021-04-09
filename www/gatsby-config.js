@@ -20,13 +20,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-landing-page-starter`,
-        short_name: `landing`,
+        name: `City Wide HVAC`,
+        short_name: `citywidehvac`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#675CE2`,
         display: `standalone`,
-        icon: `src/assets/logo.svg`, // This path is relative to the root of the site.
+        icon: `src/assets/logo.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-offline`,

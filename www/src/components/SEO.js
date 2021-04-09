@@ -68,7 +68,7 @@ function SEO({ description, lang, meta, title }) {
 SEO.defaultProps = {
   lang: `en`,
   meta: [],
-  description: ``,
+  description: `Furnaces, Air Conditioners, Heat Pumps, Air Filters, Humidifiers, Clean & Check, Water Heater and Sump Pumps. 24/7 service, call 513.200.2698`,
 }
 
 SEO.propTypes = {

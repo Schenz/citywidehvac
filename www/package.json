@@ -1,5 +1,5 @@
 {
-  "name": "gatsby-landing-page-starter",
+  "name": "city-wide-hvac",
   "private": true,
   "description": "A simple landing page starter template with Gatsby",
   "version": "1.0.0",
@@ -43,9 +43,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/btahir/gatsby-landing-page-starter"
+    "url": "https://github.com/Schenz/citywidehvac"
   },
   "bugs": {
-    "url": "https://github.com/btahir/gatsby-landing-page-starter/issues"
+    "url": "https://github.com/Schenz/citywidehvac/issues"
   }
 }

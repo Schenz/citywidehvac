@@ -5,6 +5,7 @@
   left: 0;
   right: 0;
   background-color: $navColor;
+  padding-bottom: -5rem;
   // -webkit-box-shadow: 0 8px 6px -6px #999;
   // -moz-box-shadow: 0 8px 6px -6px #999;
   // box-shadow: 0 8px 6px -6px #999;
@@ -33,9 +34,9 @@
 }
 
 .logo-image {
-  width: 2rem;
-  height: 1.25rem;
-  background: url("../assets/logo.svg") no-repeat center;
+  width: 65px;
+  height: 65px;
+  background: url("../assets/logo.png") no-repeat center;
   background-size: 100% 100%;
 }
 
