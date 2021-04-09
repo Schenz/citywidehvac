@@ -15,7 +15,7 @@ const IndexPage = () => (
     <ValueProp />
     <SocialProof />
     <ProductBenefits />
-    <ProductFeatures />
+    {/*<ProductFeatures />*/}
     <Testimonials />
     <CallToAction />
   </Layout>
